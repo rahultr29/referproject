@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="abc.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="nav.js"></script>
+</head>
+<body>
+
+ <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          
+          <a class="navbar-brand" href="nav.html">E-LEARNING</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="nav.html"><div class="glyphicon glyphicon-home"> HOME</div></a></li>
+            <li><a href="course.html"><div class="glyphicon glyphicon-book"> COURSE</div></a></li>
+            <li><a href="contact.html"><div class="glyphicon glyphicon-earphone"> CONTACT</div></a></li>
+			<li><a href="login.html"><div class="glyphicon glyphicon-home"> LOGOUT</div></a></li>
+           
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container jumbo">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h2>E-LEARNING</h2>
+       
+        
+    <div class="divClass">
+       <p> Learning in their free time will lead to better performance and higher efficiency, especially because online eLearning software will enable them to revisit any information they need, whenever they need it</p>
+        
+        <span style="display: none;" id="moreDetails">
+            <br><p>I have started working with Skytech initially post which I moved to IBM which was
+			located in Noida. After that I thought coming back to Kolkata again and what better
+			then Cognizant.</p>
+        </span>
+        <a class="mt-5 " id="moreId" onclick="moreDetails()"><b>Show more.....</b></a>
+    </div>
+      
+      </div>
+
+	    <script>
+        function moreDetails() {
+            console.log("Inside moreDetails");
+            var x = document.getElementById("moreDetails");
+            var anchor = document.getElementById("moreId");
+            
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                anchor.innerHTML="<b>Show less</b>";
+            } else {
+                x.style.display = "none";
+                anchor.innerHTML="<b>Show more.....</b>";
+            }
+        }
+    </script>
+	
+ 
+	  
+    </div> <!-- /container -->
+<div class="container">
+  <p>See full live action implemented in our site, <a href="https://reezhdesign.com" rel="author">ReeZh Design</a></p>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
