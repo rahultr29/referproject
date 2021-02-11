@@ -23,7 +23,7 @@ background-image: url("8.jpg");
   padding-top: 150px;
   height: 200vh;
 }
-// Navigation Bar
+
 .navbar {
   a {
     color: $navbar-black;
