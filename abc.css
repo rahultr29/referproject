@@ -1,4 +1,4 @@
-// Colors
+
 $navbar-white: #fafafa;
 $navbar-black: #131313;
 $navbar-active-color: #fafafa;
@@ -43,7 +43,7 @@ background-image: url("8.jpg");
   }
 }
 
-// On Shrink
+
 .shrink {
   .navbar {
     color: $navbar-white;
